@@ -5,9 +5,29 @@ class CounterScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text("hola mundo"),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Contador"),
+      ),
+      body: const Center(
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            '10',
+            style: TextStyle(fontSize: 160, fontWeight: FontWeight.w100),
+          ),
+          Text(
+            "click",
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.w100),
+          ),
+        ],
+      )),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print("hola");
+        },
+        child: const Icon(Icons.plus_one),
       ),
     );
   }
