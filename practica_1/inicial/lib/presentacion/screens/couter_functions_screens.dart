@@ -58,6 +58,7 @@ class _CounterFunctionsScreenState extends State<CounterFunctionsScreen> {
 
 class CustomButton extends StatelessWidget {
   final IconData icon;
+  // ignore: prefer_typing_uninitialized_variables
   final onPressed;
 
   const CustomButton({
